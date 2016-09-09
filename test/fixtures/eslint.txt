@@ -1,0 +1,10 @@
+
+/Users/max/code/eslint-config-wunderflats/test/fixtures/max-len.js
+  7:1  error  Line 7 exceeds the maximum line length of 80  max-len
+
+/Users/max/code/eslint-config-wunderflats/test/fixtures/mocha.js
+  5:10  error  Unexpected exclusive mocha test      mocha/no-exclusive-tests
+  8:3   error  Do not pass arrow functions to it()  mocha/no-mocha-arrows
+
+✖ 3 problems (3 errors, 0 warnings)
+

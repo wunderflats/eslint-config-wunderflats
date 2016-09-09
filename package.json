@@ -1,0 +1,27 @@
+{
+  "name": "eslint-config-wunderflats",
+  "version": "0.0.1",
+  "description": "Standard-based ESLint config for Wunderflats",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wunderflats/eslint-config-wunderflats.git"
+  },
+  "author": "Wunderflats GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wunderflats/eslint-config-wunderflats/issues"
+  },
+  "homepage": "https://github.com/wunderflats/eslint-config-wunderflats",
+  "dependencies": {
+    "eslint": "^3.4.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-plugin-mocha": "^4.5.1",
+    "eslint-plugin-promise": "^2.0.1",
+    "eslint-plugin-react": "^6.2.0",
+    "eslint-plugin-standard": "^2.0.0"
+  }
+}
