@@ -1,3 +1,5 @@
 'use strict'
 
-module.exports = require('./.eslintrc')
+const fs = require('fs')
+
+module.exports = JSON.parse(fs.readFileSync('./.eslintrc', 'utf-8'))
