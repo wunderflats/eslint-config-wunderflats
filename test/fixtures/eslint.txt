@@ -6,5 +6,11 @@
   5:10  error  Unexpected exclusive mocha test      mocha/no-exclusive-tests
   8:3   error  Do not pass arrow functions to it()  mocha/no-mocha-arrows
 
-✖ 3 problems (3 errors, 0 warnings)
+/Users/max/code/eslint-config-wunderflats/test/fixtures/spacing.js
+  3:17  error  A space is required after '['   array-bracket-spacing
+  3:18  error  A space is required after '{'   object-curly-spacing
+  3:33  error  A space is required before '}'  object-curly-spacing
+  3:34  error  A space is required before ']'  array-bracket-spacing
+
+✖ 7 problems (7 errors, 0 warnings)
 
