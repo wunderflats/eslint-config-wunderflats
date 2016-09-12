@@ -26,6 +26,16 @@ exports.ok = { a: '1' }
 exports.notOk = {a: '1'}
 ```
 
+### `array-bracket-spacing`
+
+```javascript
+// ok
+exports.ok = [ '1', '2' ]
+
+// not ok
+exports.notOk = ['1', '2']
+```
+
 ### `max-len`
 
 Lines may not be longer than 80 characters.
