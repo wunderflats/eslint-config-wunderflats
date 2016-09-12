@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-wunderflats",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Standard-based ESLint config for Wunderflats",
   "main": "index.js",
   "scripts": {
