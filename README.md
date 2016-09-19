@@ -48,6 +48,17 @@ const myModule = require('../test/../test/../test/../test/../test/../test/../tes
 myModule.doSomeCalculationThatTakesALongTimeToExplain('it', 'also', 'takes', 'arguments')
 ```
 
+### `require-path-exists`
+
+```javascript
+// not ok
+require()
+// not ok
+require('some-module-that-doesn-exist')
+// not ok
+require('two', 'arguments')
+```
+
 ### `mocha/no-exclusive-tests`
 
 You're not allowed to use `describe.only` etc.

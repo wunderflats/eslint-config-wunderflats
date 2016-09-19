@@ -1,7 +1,8 @@
 {
   "extends": "standard",
   "plugins": [
-    "mocha"
+    "mocha",
+    "require-path-exists"
   ],
   "rules": {
     "mocha/no-exclusive-tests": "error",
@@ -11,6 +12,9 @@
       "ignorePattern": "^.*require\\s*\\("
     } ],
     "array-bracket-spacing": [ "error", "always" ],
-    "object-curly-spacing": [ "error", "always"]
+    "object-curly-spacing": [ "error", "always"],
+    "require-path-exists/notEmpty": "error",
+    "require-path-exists/tooManyArguments": "error",
+    "require-path-exists/exists": "error"
   }
 }
