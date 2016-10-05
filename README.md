@@ -41,11 +41,11 @@ exports.notOk = ['1', '2']
 Lines may not be longer than 80 characters.
 
 ```javascript
-// requires are ignored, so this is ok:
+// strings are ignored, so this is ok:
 const myModule = require('../test/../test/../test/../test/../test/../test/../test/../test/../test')
 
 // this is not ok:
-myModule.doSomeCalculationThatTakesALongTimeToExplain('it', 'also', 'takes', 'arguments')
+myModule.doSomeCalculationThatTakesALongTimeToExplain(91872094182750910, 19248712349, 90)
 ```
 
 ### `require-path-exists`
