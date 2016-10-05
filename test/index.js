@@ -4,14 +4,31 @@ const assert = require('assert')
 const path = require('path')
 const exec = require('child_process').exec
 
-exec('node_modules/.bin/eslint test/fixtures', {
+exec('node_modules/.bin/eslint test/fixtures/max-len.js', {
   cwd: path.resolve(__dirname, '..'),
   env: process.env
 }, function (err, stdout) {
   assert.ok(err)
 
   assert(/exceeds the maximum line length of 80/.test(stdout),
+  'does not enforce maximum line length of 80')
+})
+
+exec('node_modules/.bin/eslint test/fixtures/max-len.ok.js', {
+  cwd: path.resolve(__dirname, '..'),
+  env: process.env
+}, function (err, stdout) {
+  assert.equal(err, null, 'does not exit cleanly')
+
+  assert.equal(/exceeds the maximum line length of 80/.test(stdout), false,
     'does not enforce maximum line length of 80')
+})
+
+exec('node_modules/.bin/eslint test/fixtures', {
+  cwd: path.resolve(__dirname, '..'),
+  env: process.env
+}, function (err, stdout) {
+  assert.ok(err)
 
   assert(/Unexpected exclusive mocha test/.test(stdout),
     'does not enforce exclusive mocha tests')

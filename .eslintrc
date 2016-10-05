@@ -9,7 +9,8 @@
     "mocha/no-mocha-arrows": "error",
     "max-len": [ "error", {
       "code": 80,
-      "ignorePattern": "^.*require\\s*\\("
+      "ignoreStrings": true,
+      "ignoreTemplateLiterals": true
     } ],
     "array-bracket-spacing": [ "error", "always" ],
     "object-curly-spacing": [ "error", "always"],

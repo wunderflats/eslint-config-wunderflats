@@ -1,7 +1,4 @@
 'use strict'
 
-// requires are ignored, so this is ok:
-const myModule = require('../test/../test/../test/../test/../test/../test/../test/../test/../index')
-
 // this is not ok:
-myModule.doSomeCalculationThatTakesALongTimeToExplain('it', 'also', 'takes', 'arguments')
+global.doSomeCalculationThatTakesALongTimeToExplain(91872094182750910, 19248712349, 90)
